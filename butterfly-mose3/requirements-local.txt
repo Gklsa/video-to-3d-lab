@@ -1,0 +1,10 @@
+# Use Python 3.10; install torch==2.2.2 from the cu118 index first (see README).
+numpy==1.26.4
+opencv-python==4.11.0.86
+imageio==2.38.0
+imageio-ffmpeg==0.6.0
+safetensors==0.8.0
+huggingface-hub==0.36.2
+viser==1.1.1
+matplotlib==3.10.9
+Pillow==12.3.0

@@ -1,0 +1,8 @@
+deps/
+upstream/
+ckpt/
+outputs/
+official_replay/
+__pycache__/
+*.pyc
+*.log

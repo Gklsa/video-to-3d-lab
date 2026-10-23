@@ -1,0 +1,29 @@
+# Local runtime, model weights and authors' separately licensed source checkout
+**/deps/
+**/ckpt/
+**/upstream/
+**/official_replay/
+**/outputs/
+**/.venv/
+**/__pycache__/
+butterfly-mose3/tools/*.png
+*.py[cod]
+*.log
+*_log.txt
+.env
+.env.*
+Thumbs.db
+.DS_Store
+
+# Large PhysTwin assets and per-run simulation outputs are retrieved separately.
+plush-phystwin/data/
+plush-phystwin/experiments/
+plush-phystwin/experiments_optimization/
+plush-phystwin/gaussian_output/
+
+# Original local download log; portable hashes are in asset_sources.json.
+plush-phystwin/download_manifest.json
+
+# Personal learning and method notes are local only.
+/docs/
+/butterfly-mose3/METHOD_NOTES.md

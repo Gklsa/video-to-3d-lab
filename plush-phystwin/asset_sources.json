@@ -1,0 +1,110 @@
+{
+  "dataset": "Jianghanxiao/PhysTwin",
+  "revision": "05665bcd0edad8f069c7def9cbb58d2eb75d68d0",
+  "sample": "double_stretch_sloth",
+  "fetched_utc": "2026-10-22T21:33:30Z",
+  "note": "Portable source/checksum summary derived from the original local download record.",
+  "archives": {
+    "data.zip": {
+      "url": "https://huggingface.co/datasets/Jianghanxiao/PhysTwin/resolve/05665bcd0edad8f069c7def9cbb58d2eb75d68d0/data.zip",
+      "archive_bytes": 8075884740,
+      "downloaded_bytes": 26518651,
+      "lfs_sha256": "586a237a0f870b2a0a144ee69c3f04b636cac4fe251df969c1fd1feaf67eeae2",
+      "etags_observed": [
+        "\"8044c77b09b7eeab3d90630183f4b45037ce540d7256076ac0ea80582155d836\""
+      ]
+    },
+    "experiments.zip": {
+      "url": "https://huggingface.co/datasets/Jianghanxiao/PhysTwin/resolve/05665bcd0edad8f069c7def9cbb58d2eb75d68d0/experiments.zip",
+      "archive_bytes": 494566786,
+      "downloaded_bytes": 644041,
+      "lfs_sha256": "81a250d12b351bde9f94d7ecd3270c3703ca325337c32a93af06b2aa6ff068ec",
+      "etags_observed": [
+        "\"951317114e7306bdfd407c42fe50a573671cea71faa5cf899f90af9e8635b3f5\""
+      ]
+    },
+    "experiments_optimization.zip": {
+      "url": "https://huggingface.co/datasets/Jianghanxiao/PhysTwin/resolve/05665bcd0edad8f069c7def9cbb58d2eb75d68d0/experiments_optimization.zip",
+      "archive_bytes": 318027387,
+      "downloaded_bytes": 30452,
+      "lfs_sha256": "03505f4a68d09c0988c439e6ad0798f5b29ed5c4b982b36b047e2db2ab5e0e7a",
+      "etags_observed": [
+        "\"f0e674170baeba3db69f8d6d42a8ef3bff15f96407dc4069104ecd014a8cba4a\""
+      ]
+    },
+    "gaussian_output.zip": {
+      "url": "https://huggingface.co/datasets/Jianghanxiao/PhysTwin/resolve/05665bcd0edad8f069c7def9cbb58d2eb75d68d0/gaussian_output.zip",
+      "archive_bytes": 1313866175,
+      "downloaded_bytes": 47001261,
+      "lfs_sha256": "ef7aed94343b3c60398e0570dbe98b9a4bfa2b16911be7b11575b810eaa223bd",
+      "etags_observed": [
+        "\"28359f3f2c4348fed716642dbdab75d06201ae2bd43573f635bbd1e74fe39050\""
+      ]
+    }
+  },
+  "files": [
+    {
+      "member": "data/different_types/double_stretch_sloth/calibrate.pkl",
+      "compressed_bytes": 463,
+      "bytes": 601,
+      "zip_crc32": "9e8bc051",
+      "crc_verified": true,
+      "sha256": "160962e646f60bdfd70a71793e11c8152a0d05543762999213d489ef50849f1d",
+      "archive": "data.zip"
+    },
+    {
+      "member": "data/different_types/double_stretch_sloth/metadata.json",
+      "compressed_bytes": 256,
+      "bytes": 500,
+      "zip_crc32": "d3ab1d2f",
+      "crc_verified": true,
+      "sha256": "dbf86424791736ce7c476ab9e2885f05d29a2228b32352e799d6836fd3970b47",
+      "archive": "data.zip"
+    },
+    {
+      "member": "data/different_types/double_stretch_sloth/final_data.pkl",
+      "compressed_bytes": 20279580,
+      "bytes": 48136559,
+      "zip_crc32": "c428473d",
+      "crc_verified": true,
+      "sha256": "d5a4d44eed6d8d78a6fedbbfa01f1f720b29f757fbb82768b28bb62391f5e346",
+      "archive": "data.zip"
+    },
+    {
+      "member": "data/bg.png",
+      "compressed_bytes": 390100,
+      "bytes": 427861,
+      "zip_crc32": "2208ec05",
+      "crc_verified": true,
+      "sha256": "8ce9519a96aec636bfed25ec7149d55b190063ad266c7bbf37f8c00cc33b9710",
+      "archive": "data.zip"
+    },
+    {
+      "member": "experiments/double_stretch_sloth/train/best_199.pth",
+      "compressed_bytes": 569839,
+      "bytes": 644210,
+      "zip_crc32": "ace10d03",
+      "crc_verified": true,
+      "sha256": "bb9f84ec4166f521552aa3c7a03ba902c0d46b623dd654057cafe1d7d1b35e7e",
+      "archive": "experiments.zip"
+    },
+    {
+      "member": "experiments_optimization/double_stretch_sloth/optimal_params.pkl",
+      "compressed_bytes": 343,
+      "bytes": 551,
+      "zip_crc32": "e0ed950c",
+      "crc_verified": true,
+      "sha256": "19379e1693a92dd7be3f46aa2c17ce0c78e628a7ffeb8e4d426f88825fffb954",
+      "archive": "experiments_optimization.zip"
+    },
+    {
+      "member": "gaussian_output/double_stretch_sloth/init=hybrid_iso=True_ldepth=0.001_lnormal=0.0_laniso_0.0_lseg=1.0/point_cloud/iteration_10000/point_cloud.ply",
+      "compressed_bytes": 46954994,
+      "bytes": 55991805,
+      "zip_crc32": "b008cb54",
+      "crc_verified": true,
+      "sha256": "fc0301db3e5fd077d153e3bb2d68cf609db1ebc6968932101f34d731b6aec5d2",
+      "archive": "gaussian_output.zip"
+    }
+  ]
+}

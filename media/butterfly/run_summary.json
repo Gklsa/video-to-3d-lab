@@ -1,0 +1,111 @@
+{
+  "verified_date": "2026-10-22",
+  "method": "Official pretrained MoSE3 inference; no training or fine-tuning",
+  "input_ownership": "Authors' butterfly example video; not a personal recording",
+  "model_input_resolution_width_height": [
+    518,
+    294
+  ],
+  "frame_count": 30,
+  "source_fps": 10,
+  "ground_truth_accuracy_evaluation": false,
+  "protocol": {
+    "processed_shape": [
+      30,
+      294,
+      518
+    ],
+    "num_ref_pts": 12000,
+    "se3_chunk_size": 1024,
+    "storage_precision_adapted": true
+  },
+  "runtime": {
+    "torch": "2.2.2+cu118",
+    "device": "NVIDIA GeForce RTX 4060 Laptop GPU",
+    "backbone_dtype": "bfloat16",
+    "output_heads_dtype": "float32",
+    "elapsed_seconds": 57.3119999999999,
+    "peak_cuda_allocated_bytes": 4715740160,
+    "runner_sha256": "02b4b89ffbb732533e65c0bcbbda7a358807a276e477e49af83e15d73db917f6",
+    "upstream_commit": "c39ef00f7198515d709f40c668688d4f869255ae",
+    "checkpoint_revision": "5280ca2ea4c8cf41ac174645fd3aada430af7f40"
+  },
+  "prediction": {
+    "filename": "predictions.npz",
+    "bytes": 456447027,
+    "sha256": "3d557b8a668ae6f07c5fdc4a5b3d8a6b2d539ce642e4b5620225854d3d80a7da",
+    "keys": [
+      "images",
+      "tracks",
+      "visibility",
+      "rigidity_emb",
+      "se3_quat",
+      "se3_trans",
+      "se3_valid",
+      "camera_poses",
+      "intrinsics",
+      "query_idx"
+    ],
+    "tracks_shape": [
+      30,
+      294,
+      518,
+      3
+    ],
+    "tracks_all_finite": true
+  },
+  "display_protocol": {
+    "model_resolution": [
+      518,
+      294
+    ],
+    "export_resolution": [
+      1920,
+      1080
+    ],
+    "point_stride": 1,
+    "point_size_pt2": 0.85,
+    "trajectory_count": 8,
+    "postprocess_geometry_smoothing": false,
+    "interpolated_3d_points": false,
+    "temporal_interpolation": false,
+    "description": "Denser display of native predictions and HD composition; export resolution is not model resolution"
+  },
+  "bundled_media": {
+    "motion_rgb.mp4": {
+      "bytes": 4319265,
+      "frames": 30,
+      "fps": 10.0,
+      "size": [
+        1920,
+        1080
+      ],
+      "first_vs_middle_mean_abs_pixel_difference": 8.609768679269548,
+      "sha256": "e1266103561e7d0e9ddfc3660611f9ea3377d8ac74a48b35ea11decddf95fda8"
+    },
+    "motion_embedding.mp4": {
+      "bytes": 5332580,
+      "frames": 30,
+      "fps": 10.0,
+      "size": [
+        1920,
+        1080
+      ],
+      "first_vs_middle_mean_abs_pixel_difference": 10.306516042952675,
+      "sha256": "c7b85e5c606542c6b21496607ed525444e71304478a47e9fd8e00219c003f43d"
+    },
+    "cover_rgb.png": {
+      "bytes": 1193992,
+      "sha256": "bbd34286a6f0ff6c81383ef0678586e8d7cee93ab49b93e9cc54d018300ef2ab"
+    },
+    "cover_embedding.png": {
+      "bytes": 1221997,
+      "sha256": "e796d963722942bf3372e9a8e78bdb9c710de74c358d01f8416ad9a60afe0b73"
+    }
+  },
+  "limitations": [
+    "No ground-truth accuracy evaluation",
+    "BF16 storage differs from the authors' reference setup",
+    "1080p export composition is not model inference resolution"
+  ]
+}

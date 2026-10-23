@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; connect-src 'self'; img-src 'self'; media-src 'self'; object-src 'none'; base-uri 'none'">
+  <meta name="description" content="Interactive playback of actual 3D point trajectories predicted by MoSE3 on the authors' butterfly example.">
+  <title>Butterfly motion · MoSE3</title>
+  <link rel="stylesheet" href="viewer.css">
+  <script src="viewer.js" defer></script>
+</head>
+<body>
+  <main class="viewer" aria-label="Interactive butterfly reconstruction">
+    <header class="titlebar">
+      <div><h1>Butterfly motion</h1><p>MoSE3 · Saved 3D prediction replay</p></div>
+      <div class="title-actions">
+        <details class="help">
+          <summary>Controls</summary>
+          <p>Drag to rotate. Scroll or pinch to zoom. Shift-drag to pan.<br>Keyboard: W/A/S/D to rotate, +/− to zoom, Space to play or pause, ←/→ to step, R to reset.</p>
+        </details>
+        <button id="reset" type="button" title="Restore the initial camera view">Reset view</button>
+      </div>
+    </header>
+    <section class="stage" aria-label="3D scene">
+      <canvas id="scene" tabindex="0" aria-label="3D point trajectories. Drag or use W A S D to rotate. Scroll, pinch, or use plus and minus to zoom. Use arrow keys to change frames."></canvas>
+      <div class="hint" id="hint">Drag to rotate <span>·</span> Scroll to zoom</div>
+      <div class="loading" id="loading" role="status" aria-live="polite">
+        <span class="loader" aria-hidden="true"></span>
+        <p id="loading-text">Loading 3D motion…</p>
+        <p class="fallback"><a href="../../media/butterfly/motion_rgb.mp4">Watch the 3D recording</a> while the interactive data loads.</p>
+        <noscript><p>This interactive viewer needs JavaScript. The recording above works without it.</p></noscript>
+      </div>
+    </section>
+    <section class="controls" aria-label="Playback controls">
+      <div class="timeline">
+        <button id="play" type="button" aria-label="Pause playback" aria-pressed="true" disabled>Pause</button>
+        <input id="frame" type="range" min="0" max="29" value="0" step="1" aria-label="Frame" disabled>
+        <output id="time" for="frame">0.0 / 2.9 s</output>
+      </div>
+      <div class="settings">
+        <label class="colour-label" for="colour">Colour</label>
+        <select id="colour" aria-label="Point colour" disabled><option value="rgb">RGB</option><option value="rigidity">Rigidity embedding</option></select>
+        <label class="size-label" for="size">Point size</label>
+        <input id="size" type="range" min="0.7" max="4" value="2.6" step="0.1" aria-label="Point size" disabled>
+        <label id="axes-label" class="axes-label" hidden><input id="axes" type="checkbox"> Local axes</label>
+        <span id="frame-info" class="frame-info"></span>
+      </div>
+    </section>
+    <footer>
+      <span id="data-note">Saved prediction replay · <a href="https://mose3-tracker.github.io/" target="_blank" rel="noopener noreferrer">MoSE3</a></span>
+      <nav aria-label="Related demonstrations">
+        <a href="source.mp4">Source clip</a>
+        <a href="../../media/butterfly/motion_rgb.mp4">3D recording</a>
+        <a href="../../media/plush/sloth_pull_release.mp4">Plush video</a>
+        <a href="../../THIRD_PARTY_NOTICES.md">Credits</a>
+      </nav>
+    </footer>
+  </main>
+</body>
+</html>

@@ -1,0 +1,75 @@
+{
+  "sanity": {
+    "frames": 30,
+    "height": 294,
+    "width": 518,
+    "query_mask_count": 112758,
+    "rendered_stable_point_count": 100000,
+    "sampled_axis_count": 16,
+    "se3_track_consistency_residual_nonquery": {
+      "count": 464,
+      "mean": 0.0014822527384750546,
+      "median": 0.0012465236574570986,
+      "p95": 0.0037564782370547245,
+      "max": 0.005757054014040062
+    },
+    "display_protocol": {
+      "model_resolution": [
+        518,
+        294
+      ],
+      "export_resolution": [
+        1920,
+        1080
+      ],
+      "point_stride": 1,
+      "point_size_pt2": 0.85,
+      "trajectory_count": 8,
+      "postprocess_geometry_smoothing": false,
+      "interpolated_3d_points": false,
+      "temporal_interpolation": false,
+      "description": "Denser display of native predictions and HD composition; export resolution is not model resolution"
+    },
+    "export_failures": []
+  },
+  "media": {
+    "motion_embedding.mp4": {
+      "bytes": 5332580,
+      "frames": 30,
+      "fps": 10.0,
+      "size": [
+        1920,
+        1080
+      ],
+      "first_vs_middle_mean_abs_pixel_difference": 10.306516042952675
+    },
+    "motion_rgb.mp4": {
+      "bytes": 4319265,
+      "frames": 30,
+      "fps": 10.0,
+      "size": [
+        1920,
+        1080
+      ],
+      "first_vs_middle_mean_abs_pixel_difference": 8.609768679269548
+    },
+    "motion_embedding.gif": {
+      "bytes": 14882279,
+      "frames": 30,
+      "size": [
+        1920,
+        1080
+      ],
+      "duration_ms_per_frame": 100
+    },
+    "motion_rgb.gif": {
+      "bytes": 15176971,
+      "frames": 30,
+      "size": [
+        1920,
+        1080
+      ],
+      "duration_ms_per_frame": 100
+    }
+  }
+}

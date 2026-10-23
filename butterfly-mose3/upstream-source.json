@@ -1,0 +1,11 @@
+{
+  "repository": "https://github.com/mose3-tracker/MoSE3",
+  "commit": "c39ef00f7198515d709f40c668688d4f869255ae",
+  "model_repository": "https://huggingface.co/mose3-tracker/MoSE3",
+  "model_revision": "5280ca2ea4c8cf41ac174645fd3aada430af7f40",
+  "model_sha256": "fcbd51ff01c2bc2f76ca9db3037e0a4055f6bc5ea202a5e1a9f57a91107d183c",
+  "paper": "https://arxiv.org/abs/2610.03716",
+  "input_video": "upstream/examples/butterfly.mp4",
+  "input_ownership": "Authors' publicly provided example; not a personal recording",
+  "experiment": "Local pretrained inference with BF16/FP32 storage; original-resolution refined input and a preserved reduced-resolution baseline"
+}
